@@ -1,8 +1,5 @@
 #!/bin/bash
 
-# Read the Slack incoming webhook URL from a Github Actions secret
-SLACK_WEBHOOK_URL=$(echo "${{ secrets.SLACK_WEBHOOK_URL }}")
-
 # Read the list of URLs from the file
 while read url || [ -n "$url" ]; do
   # Get the SSL expiration date
